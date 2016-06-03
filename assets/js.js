@@ -21,7 +21,7 @@
 // initialize
 (function(){
 	
-	var mediaDir = "http://sck.dk/filibra";
+	var mediaDir = "http://mopra.github.io";
 	
 	$("#player").jAudio({
 		playlist: [{
