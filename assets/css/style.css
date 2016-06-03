@@ -46,17 +46,24 @@
 }
 .jAudio--player .jAudio--ui
 {
-	position:relative;
+	position:fixed;
 	width:100%
 }
-.jAudio--player .jAudio--status-bar
+
+header
 {
 	width:100%;
 	z-index:1;
 	position:relative;
 	padding:100px 2rem 2rem;
-	display:table
+	display:table;
+    transition: all 0.1s;
 }
+header.tiny {
+	padding:1rem 1rem 1rem;
+    transition: all 0.4s;
+}
+
 .jAudio--player .jAudio--status-bar:after
 {
 	content:" ";
@@ -68,7 +75,7 @@
 {
 	width:100%;
 	display:table;
-	background:#fafafa
+	background:transparent;
 }
 .jAudio--player .jAudio--controls:after
 {
@@ -107,6 +114,7 @@
 	background-size:cover;
 	background-position:center center
 }
+
 .jAudio--player .jAudio--time
 {
 	display:table;
@@ -185,6 +193,7 @@
 }
 .jAudio--player .jAudio--playlist
 {
+    margin-top:17.3rem;
 	background:#fff
 }
 .jAudio--player .jAudio--playlist .jAudio--playlist-item
@@ -370,5 +379,19 @@
 }
 
 #progress {
-    display:none;
+    position: absolute;
+    bottom: 26px;
+    width: 85px;
+    height: 85px;
+    border: 4px;
+    display: none;
 }
+
+.btn {
+    position: relative;
+    margin-top: -79.5px;
+    margin-left: 2.5px;
+    width: 80px !important;
+    height: 80px !important;
+}
+
