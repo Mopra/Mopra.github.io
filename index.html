@@ -1,26 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/Person">
 <head>
+<title itemprop="jobTitle">Morten Pradsgaard - Digital Konceptudvikler</title>
 <meta charset="utf-8">
-<title>Morten Pradsgaard - Digital Konceptudvikler</title>
-<meta name="description" content="Description goes here">
+<meta name="author" content="Morten Pradsgaard">
+<link rel="canonical" href="http://mopra.dk/" />
+<meta name="description" content="Mit navn er Morten og mit mål er, at kunne være med til at designe og udvikle fremtidens hjemmesider">
 <!--Import materialize.css-->
 <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
 
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- VIEWPORT -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 </head>
 
 <body>
+<!--Everything Js'ish-->
+<script type="text/javascript" src="assets/js/js.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+    $('.head-set-one').delay(4000).fadeIn(800, function () {
+        $(this).delay(500).fadeOut(800);
+    });
+    $('.head-set-two').delay(6100).fadeIn(800, function () {
+        $(this).delay(500).fadeOut(800);
+    });
+    $('.head-set-three').delay(8200).fadeIn(800, function () {
+        $(this).delay(500).fadeOut(800);
+    });
+    $('.head-set-four').delay(10300).fadeIn(800, function () {
+        $(this).delay(500).fadeOut(800);
+    });
+    $('.head-set-five').delay(12400).fadeIn(800, function () {
+    });
+    $('video').delay(0).fadeTo(0,0.6, function () {
+        $(this).delay(20000).fadeTo(10000,0.1);
+    });
+    $('.bounce').delay(20000).fadeIn(1200, function () {
+    });
+    
+    /*Materialize rdy stuff*/
+    $('.scrollspy').scrollSpy({
+        scrollOffset: -100
+    });
+    $('.modal').modal();
+    $('.tooltipped').tooltip({delay: 50});
+    
+});
+    
+$(window).on("scroll touchmove", function() { 
+    if ($(document).scrollTop() > $("#one").position().top) {
+        $('body').css('background', $("#one").attr("data-color"))
+    };
+
+    if ($(document).scrollTop() > $("#two").position().top) {
+        $('body').css('background', $("#two").attr("data-color"))
+    };
+    
+    if ($(document).scrollTop() > $("#three").position().top) {
+        $('body').css('background', $("#three").attr("data-color"))
+    };
+    
+    if ($(document).scrollTop() > $("#four").position().top) {
+        $('body').css('background', $("#four").attr("data-color"))
+    };
+
+    if ($(document).scrollTop() > $("#five").position().top) {
+        $('body').css('background', $("#five").attr("data-color"))
+    };
+    
+    if ($(document).scrollTop() > $("#six").position().top) {
+        $('body').css('background', $("#six").attr("data-color"))
+    };
+});
+    
+</script>  
+<!--Import icons-->
+<script src="https://use.fontawesome.com/1f60b8f80d.js"></script>   
+    
 <header id="toc">
-    <div class="hide-on-small-only m3 l2">
+    <div class="hide-on-med-and-down m3 l2">
         <ul class="section table-of-contents">
             <li><a href="#one">Above the fold</a></li>
-            <li><a href="#two">Designet af?</a></li>
+            <li><a href="#two">Designet af</a></li>
             <li><a href="#three">Webdesign</a></li>
             <li><a href="#four">After Effects</a></li>
             <li><a href="#five">Grafisk lir</a></li>
-            <li><a href="#six">Uddannelse & CV</a></li>
+            <li><a href="#six">CV & Kontakt</a></li>
         </ul>
     </div>
 </header>
@@ -31,11 +99,13 @@
                 <div class="head-set-two">Experience</div>
                 <div class="head-set-three">Crafted</div>
                 <div class="head-set-four">Intelligently</div>
-                <div class="head-set-five">Morten Pradsgaard</div>
+                <div class="head-set-five" itemprop="name">Morten Pradsgaard</div>
             </h1>
             <div class="bounce"><a href="#two">scroll down</a></div>
         <video autoplay>
-            <source src="materials/video/home_app_creation.webm">
+            <source src="materials/video/home_app_creation.webm" type="video/webm">
+            <source src="materials/video/home_app_creation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
         </video>
     </section>   
     <!--/\--Above the fold-->
@@ -45,19 +115,31 @@
         <div class="container">
             <div class="row">
                     <div class="col s12 m12 l6">
+                        
+                        <div class="col s12 m12 l6 hide-on-large-only">
+                            <img src="assets/img/profile.jpg" itemprop="image">
+                        </div>
+                        
                         <div class="row">
                             <h2>
-                                Designet af?
+                                Designet af...
                             </h2>
                         </div>
                         <div class="row">
-                            <p class="flow-text blue-grey-text text-lighten-5">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate dignissim pellentesque. Praesent sagittis non massa ac eleifend. Praesent auctor urna vitae ultricies dapibus. Phasellus ac malesuada massa, a finibus nisl. Nulla facilisi. Nam convallis dolor ac lorem accumsan, vitae pretium est faucibus. Pellentesque augue felis, placerat pharetra nibh non, aliquet feugiat ante.
+                            <p class="flow-text blue-grey-text text-lighten-5" itemprop="description">
+...Mit navn er Morten og mit mål er, at kunne være med til at designe og udvikle fremtidens hjemmesider. 
+<br><br>                       
+<i>Tre gode ord, som en tidligere kollega har beskrevet mig med, er: ambitiøs, ansvarsbevidst og hjælpsom.</i>
+<br><br>
+Tager alt mit arbejde dybt seriøst og elsker et godt samarbejde på arbejdspladsen. Men hvis jeg
+skulle ligge vægt på en speciel ting, ville det være mit ambitions niveau. Jeg går kun efter det
+bedste og det næst bedste, kunne lige så godt være det dårligste. Hvis der er noget jeg ikke
+kan og hvis det er i vejen for, at jeg kan nå mit mål, så lære jeg det.
                             </p>
                         </div>
                     </div>
-                    <div class="col s12 m12 l6">
-                        <img src="assets/img/profile.png" class="right">
+                    <div class="col s12 m12 l6 hide-on-med-and-down">
+                        <img src="assets/img/profile.jpg" class="right" itemprop="image">
                     </div>
                 </div>
         </div>
@@ -67,61 +149,54 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate dignissim 
         <div class="container">
             <div class="row">
                 
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="assets/img/job-01.png" alt="Herning Byfestival">
+                        <div class="card-image">
+                            <a href="http://herningbyfestival.dk/index_old.html" target="_blank">
+                                <img src="assets/img/job-01.jpg" alt="Herning Byfestival">
+                            </a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Herning Byfestival<i class="material-icons right">more_vert</i></span>
-                            <p><a href="http://herningbyfestival.dk/index_old.html" target="_blank">Se projektet online her</a></p>
+                            <h3 class="card-title activator grey-text text-darken-4">Herning Byfestival</h3>
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Herning Byfestival<i class="material-icons right">close</i></span>
-                            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate dignissim pellentesque. Praesent sagittis non massa ac eleifend. Praesent auctor urna vitae ultricies dapibus. Phasellus ac malesuada massa, a finibus nisl. Nulla facilisi. Nam convallis dolor ac lorem accumsan, vitae pretium est faucibus. Pellentesque augue felis, placerat pharetra nibh non, aliquet feugiat ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lobortis vestibulum magna ac mollis. Cras fermentum erat fringilla nunc porta fermentum.
-                            </p>
+                        <div class="card-action">
+                            <a href="http://herningbyfestival.dk/index_old.html" target="_blank" class="blue-text">Se projektet online her</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="assets/img/job-02.png" alt="Herning Byfestival">
+                        <div class="card-image">
+                            <a href="http://sck.dk" target="_blank">
+                                <img src="assets/img/job-02.jpg" alt="Herning Byfestival">
+                            </a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Skjern Computer Klub<i class="material-icons right">more_vert</i></span>
-                            <p><a href="http://sck.dk" target="_blank">Se projektet online her</a></p>
+                            <h3 class="card-title activator grey-text text-darken-4">Skjern Computer Klub</h3>
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Skjern Computer Klub<i class="material-icons right">close</i></span>
-                            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate dignissim pellentesque. Praesent sagittis non massa ac eleifend. Praesent auctor urna vitae ultricies dapibus. Phasellus ac malesuada massa, a finibus nisl. Nulla facilisi. Nam convallis dolor ac lorem accumsan, vitae pretium est faucibus. Pellentesque augue felis, placerat pharetra nibh non, aliquet feugiat ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lobortis vestibulum magna ac mollis. Cras fermentum erat fringilla nunc porta fermentum.
-                            </p>
+                        <div class="card-action">
+                            <a href="http://sck.dk" target="_blank" class="blue-text">Se projektet online her</a>
                         </div>
                     </div>
                 </div>
                 
                 
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="assets/img/job-03.png" alt="Herning Byfestival">
+                        <div class="card-image">
+                            <a href="http://cocap.dk/sub/msf/" target="_blank">
+                                <img src="assets/img/job-03.jpg" alt="Herning Byfestival">
+                            </a>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Læger uden grænser<i class="material-icons right">more_vert</i></span>
-                            <p><a href="http://cocap.dk/sub/msf/" target="_blank">Se projektet online her</a></p>
+                            <h3 class="card-title activator grey-text text-darken-4">Læger uden grænser</h3>
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Læger uden grænser<i class="material-icons right">close</i></span>
-                            <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate dignissim pellentesque. Praesent sagittis non massa ac eleifend. Praesent auctor urna vitae ultricies dapibus. Phasellus ac malesuada massa, a finibus nisl. Nulla facilisi. Nam convallis dolor ac lorem accumsan, vitae pretium est faucibus. Pellentesque augue felis, placerat pharetra nibh non, aliquet feugiat ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque lobortis vestibulum magna ac mollis. Cras fermentum erat fringilla nunc porta fermentum.
-                            </p>
+                        <div class="card-action">
+                            <a href="http://cocap.dk/sub/msf/" target="_blank" class="blue-text">Se projektet online her</a>
                         </div>
                     </div>
                 </div>
-        
                 
             </div>
         </div>
@@ -152,11 +227,23 @@ Denne video lavede jeg i forbindelse med FC Midtjyllands nye spillertrøje for s
                 </div>
             </div>
             
-            <div class="row">
+            <div class="row hide-on-med-and-down">
                 <div class="dotRow"><div class="dots"></div></div>
             </div>
             
             <div class="row item">
+                <div class="col s12 m12 l5 hide-on-large-only">
+                    <div class="row">
+                        <h2>
+                            Tak for sommerlan 2016 video
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <p class="flow-text">
+Videoen blev lavet i forbindelse med Skjern Computer Klubs årlige sommerlan, som er et computer party der med sine 128 deltagere, spiller computer og laver aktiviteter i en hel uge.
+                        </p>
+                    </div>
+                </div>
                  <div class="col s12 m12 l7 left">
                     <div class="video-container">
                         
@@ -164,7 +251,7 @@ Denne video lavede jeg i forbindelse med FC Midtjyllands nye spillertrøje for s
                         
                     </div>
                 </div>
-                <div class="col s12 m12 l5">
+                <div class="col s12 m12 l5 hide-on-med-and-down">
                     <div class="row">
                         <h2>
                             Tak for sommerlan 2016 video
@@ -178,7 +265,7 @@ Videoen blev lavet i forbindelse med Skjern Computer Klubs årlige sommerlan, so
                 </div>
             </div>
             
-            <div class="row">
+            <div class="row hide-on-med-and-down">
                 <div class="dotRow"><div class="dots"></div></div>
             </div>
             
@@ -191,7 +278,7 @@ Videoen blev lavet i forbindelse med Skjern Computer Klubs årlige sommerlan, so
                     </div>
                     <div class="row">
                         <p class="flow-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi neque, mollis ac est elementum, sodales dapibus mauris. Donec varius ligula eget mollis efficitur.
+For at holde evnerne ved lige, bliver der leget en del i templating. Dette gør jeg oftest, hvor jeg har et bestemt UI jeg får inspiration til at lave. Til venstre har jeg et eksempel på hvad det kunne være.
                         </p>
                     </div>
                 </div>
@@ -212,7 +299,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi neque, mol
             
             <div class="row">
                 
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <a href="https://www.instagram.com/p/BLuSLnCFtU3/" target="_blank">
                         <div class="instacard">
                             <div class="icons">
@@ -222,12 +309,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi neque, mol
                                     <li><i class="fa fa-comment" aria-hidden="true"></i>3</li>
                                 </ul>
                             </div>
-                            <img src="assets/img/instagram/paperline.png" accesskey="paperplane">
+                            <img src="assets/img/instagram/paperline.jpg" accesskey="paperplane">
                         </div>
                     </a>
                 </div>
     
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <a href="https://www.instagram.com/p/9SRm1zsO16/" target="_blank">
                         <div class="instacard">
                             <div class="icons">
@@ -237,12 +324,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi neque, mol
                                     <li><i class="fa fa-comment" aria-hidden="true"></i>3</li>
                                 </ul>
                             </div>
-                            <img src="assets/img/instagram/loginscreen.png" accesskey="paperplane">
+                            <img src="assets/img/instagram/loginscreen.jpg" accesskey="paperplane">
                         </div>
                     </a>
                 </div>
                 
-                <div class="col s12 m6 l4">
+                <div class="col s12 m12 l4">
                     <a href="https://www.instagram.com/p/BC867clMOz_/" target="_blank">
                         <div class="instacard">
                             <div class="icons">
@@ -252,96 +339,89 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi neque, mol
                                     <li><i class="fa fa-comment" aria-hidden="true"></i>3</li>
                                 </ul>
                             </div>
-                            <img src="assets/img/instagram/paperplane.png" accesskey="paperplane">
+                            <img src="assets/img/instagram/paperplane.jpg" accesskey="paperplane">
                         </div>
                     </a>
                 </div>
                 
             </div>
             
-            <div class="row">
-            
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fulveshoppen%2Fposts%2F554620064742545%3A0&width=500" width="500" height="677" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            
-            </div>
-            
         </div>
     </section>
     
     <section class="section scrollspy" id="six" data-color="#1f2326">
-        <div class="container">
-            <div class="row">
-                <h2>
-                    UDANNELSE & CV.
-                </h2>
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <a href="assets/files/CV,%20Morten%20Pradsgaard.pdf" target="_blank">
+                            <div class="custom-btn one">
+                                DOWNLOAD CV
+                            </div>
+                       </a>
+                    </div>
+                    <div class="col s12 m6 l6 right">
+                        <a href="#modal1">
+                            <div class="custom-btn two">
+                                KONTAKT
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                        <div class="table">
+                            <ul>
+                                <a href="https://www.facebook.com/mopradk" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" target="_blank">
+                                    <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                                </a>
+                                <a href="http://www.linkedin.com/in/mopradk" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Linkedin" target="_blank">
+                                    <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                                </a>
+                                <a href="https://www.instagram.com/mopradk/" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" target="_blank">
+                                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                </a>
+                                <a href="https://github.com/Mopra/Mopra.github.io" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Se denne side på Github" target="_blank">
+                                    <li><i class="fa fa-github" aria-hidden="true"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    
+                </div>
+                
             </div>
-        </div>
     </section>
     
 </main>
-<footer>
-    
-</footer>
-    
-<!--Everything Js'ish-->
-<script type="text/javascript" src="assets/js/js.js"></script>
-<script type="text/javascript">
-$( document ).ready(function() {
-    $('.head-set-one').delay(4000).fadeIn(800, function () {
-        $(this).delay(500).fadeOut(800);
-    });
-    $('.head-set-two').delay(6100).fadeIn(800, function () {
-        $(this).delay(500).fadeOut(800);
-    });
-    $('.head-set-three').delay(8200).fadeIn(800, function () {
-        $(this).delay(500).fadeOut(800);
-    });
-    $('.head-set-four').delay(10300).fadeIn(800, function () {
-        $(this).delay(500).fadeOut(800);
-    });
-    $('.head-set-five').delay(12400).fadeIn(800, function () {
-    });
-    $('video').delay(0).fadeTo(0,0.6, function () {
-        $(this).delay(20000).fadeTo(10000,0.1);
-    });
-    $('.bounce').delay(20000).fadeIn(1200, function () {
-    });
-    
-    /*Materialize rdy stuff*/
-    $('.scrollspy').scrollSpy({
-        scrollOffset: -100
-    });
-    
-});
-    
-$(window).on("scroll touchmove", function() { 
-    if ($(document).scrollTop() > $("#one").position().top) {
-        $('body').css('background', $("#one").attr("data-color"))
-    };
 
-    if ($(document).scrollTop() > $("#two").position().top) {
-        $('body').css('background', $("#two").attr("data-color"))
-    };
     
-    if ($(document).scrollTop() > $("#three").position().top) {
-        $('body').css('background', $("#three").attr("data-color"))
-    };
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Spørgsmål? Lyst til at snakke? Eller mangler du en super engageret medarbejder?</h4>
+        <p>Ring gerne eller send en email, så vil jeg forsøge at svare så hurtigt som muligt.</p>
+        <ul>
+            <li itemprop="telephone"><i class="fa fa-phone" aria-hidden="true"></i>   &nbsp;+45 29 62 38 10</li>
+            <li itemprop="email"><i class="fa fa-envelope" aria-hidden="true"></i>  &nbsp;&nbsp;mopradk@gmail.com</li>
+        </ul>
+    </div>
+    <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Luk</a>
+    </div>
+</div>
+   
     
-    if ($(document).scrollTop() > $("#four").position().top) {
-        $('body').css('background', $("#four").attr("data-color"))
-    };
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    if ($(document).scrollTop() > $("#five").position().top) {
-        $('body').css('background', $("#five").attr("data-color"))
-    };
-    
-    if ($(document).scrollTop() > $("#six").position().top) {
-        $('body').css('background', $("#six").attr("data-color"))
-    };
-});
+  ga('create', 'UA-90339904-1', 'auto');
+  ga('send', 'pageview');
 
-</script>
-<!--Import icons-->
-<script src="https://use.fontawesome.com/1f60b8f80d.js"></script>
+</script>    
 </body>
 </html>
