@@ -35,7 +35,7 @@ h2 {
     bottom:5vh;
     z-index: 9;
     text-align: right;
-   
+
 }
 .table-of-contents a {color:#fff;transition: all .2s;text-shadow: 0 0 3px #000;}
 .table-of-contents a.active, .table-of-contents a:hover {
@@ -48,12 +48,12 @@ h2 {
 
 /*section*/#one {
     height: 100vh;
-    
+
     h1 {
         width:100vw;
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25);
 
-        
+
         .head-set-one, .head-set-two, .head-set-three, .head-set-four, .head-set-five {
             display: none;
             text-align: center;
@@ -97,12 +97,12 @@ h2 {
     0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
     40% {-webkit-transform: translateY(-30px);}
     60% {-webkit-transform: translateY(-15px);}
-} 
+}
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
-} 
+}
 /*
  * Adding the animation to our element
 */
@@ -116,13 +116,12 @@ h2 {
 min-height: 100vh;
 @media (max-width: 992px) { min-height: 50vh; }
 @media (max-width: 600px) { min-height: 20vh; }
-    
+
 h2 {color: #fff;margin: 100px 0 0 0;}
 img {
         width:90%;height: auto;
         border-radius: 50%;
         padding: 10%;
-        margin-left: 5vw;
     }
 }
 
@@ -138,23 +137,23 @@ h3 {color: #fff;margin:  0;}
 min-height: 100vh;color: #ebebeb;
 @media (max-width: 992px) { min-height: 50vh; }
 @media (max-width: 600px) { min-height: 20vh; }
-    
+
     h2 {
         color: #fff;margin: 100px 0 0 0;
-        @media (max-width: 992px) { padding: 0 8px; } 
+        @media (max-width: 992px) { padding: 0 8px; }
     }
     .flow-text {
-        @media (max-width: 992px) { padding: 0 8px; } 
+        @media (max-width: 992px) { padding: 0 8px; }
     }
-    
+
     .video-container {
         position: relative;
         height: 600px;
         width: 100%;
-        -webkit-perspective: 150px; 
+        -webkit-perspective: 150px;
         perspective: 150px;
-        @media (max-width: 992px) { 
-            -webkit-perspective: 0px; 
+        @media (max-width: 992px) {
+            -webkit-perspective: 0px;
             perspective: 0px;
             height: auto;
         }
@@ -164,36 +163,36 @@ min-height: 100vh;color: #ebebeb;
         text-align: center;
     }
     #E01, #E02, #E03 {padding: 50px;position: absolute; }
-    #E01 {        
-        -webkit-transform: rotateY(-3deg); 
+    #E01 {
+        -webkit-transform: rotateY(-3deg);
         transform: rotateY(-3deg);
         @media (max-width: 992px) {
             padding: 0px;
-            -webkit-transform: rotateY(0deg); 
+            -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
         }
     }
-    #E02 {        
+    #E02 {
         padding: 75px 25px;
-        -webkit-transform: skewY(3deg); 
+        -webkit-transform: skewY(3deg);
         transform: rotateY(3deg);
         @media (max-width: 992px) {
             padding: 0px;
-            -webkit-transform: rotateY(0deg); 
+            -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
         }
     }
-    #E03 {   
+    #E03 {
         padding: 75px 25px;
-        -webkit-transform: rotateY(-3deg); 
+        -webkit-transform: rotateY(-3deg);
         transform: rotateY(-3deg);
         @media (max-width: 992px) {
             padding: 0px;
-            -webkit-transform: rotateY(0deg); 
+            -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
         }
     }
-    
+
     .dotRow {
         position:relative;
         height: 20vh;
@@ -207,20 +206,20 @@ min-height: 100vh;color: #ebebeb;
             border-left: 10px dotted #fff;
         }
     }
-    
+
     .item {
         padding: 10vh 0;
         &:first-child {padding: 0;}
         @media (max-width: 992px) { padding: 0; }
     }
-    
+
 }
 
 /*section*/#five {
 min-height: 100vh;
 @media (max-width: 992px) { min-height: 50vh; }
 @media (max-width: 600px) { min-height: 20vh; }
-    
+
     .instacard {
         line-height: 0; /*Tiny fix*/
         border-radius: 5px;
@@ -249,32 +248,32 @@ min-height: 100vh;
                 }
             }
         }
-        
+
         img {
             padding: 0;margin:0;
             width:100%;
             height: auto;
             border-radius: 5px;
         }
-        
+
         &:hover {
             box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
             transform: scale(1.01);
         }
     }
-    
+
 }
 
 /*section*/#six {
 min-height: 100vh;color:#fff;
 @media (max-width: 992px) { min-height: 50vh; }
 @media (max-width: 600px) { min-height: 20vh; }
-    
+
 h2 {color: #fff;margin: 100px 0 0 0;}
 
     .custom-btn {
         font-family: 'Oswald';
-        padding: 100px 20px; 
+        padding: 100px 20px;
         border-radius: 5px;
         text-align: center;
         margin: 10px 0;
@@ -282,7 +281,7 @@ h2 {color: #fff;margin: 100px 0 0 0;}
         text-shadow: 0 0 3px #000;
         cursor:pointer;
         color: #fff;
-        
+
         &:hover {
             box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
             transform: scale(1.01);
@@ -290,9 +289,9 @@ h2 {color: #fff;margin: 100px 0 0 0;}
         }
     }
     .one {
-        background: 
+        background:
             linear-gradient(
-            rgba(0, 150, 136, 0.45), 
+            rgba(0, 150, 136, 0.45),
             rgba(0, 150, 136, 0.45)
             ),
             url(../img/download-cv.jpg);
@@ -300,69 +299,48 @@ h2 {color: #fff;margin: 100px 0 0 0;}
         background-position: center;
     }
     .two {
-        background: 
+        background:
             linear-gradient(
-            rgba(2, 119, 189, 0.45), 
+            rgba(2, 119, 189, 0.45),
             rgba(2, 119, 189, 0.45)
             ),
             url(../img/kontakt.jpg);
         background-size: cover;
-        
+
     }
-    
+    .three {
+        background:
+            linear-gradient(
+            rgba(2, 119, 189, 0.45),
+            rgba(2, 119, 189, 0.45)
+            ),
+            url(../img/anbefalinger.jpg);
+        background-size: cover;
+
+    }
+
     .table {
         display: table;
         margin: 20vh auto;
-        
+
         ul {
             min-width: 300px;
             list-style: none;
             padding-top: 20px;
             margin-left: 25px;
-            
+
             li {
                 border-radius:50%;
                 padding: 20px 22px;
                 margin: 0 5px;
                 display:inline;
                 background-color: #eceff1;
-                
+
                 i {
                     color: #000;
                 }
             }
         }
     }
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
