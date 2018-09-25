@@ -274,6 +274,7 @@ jQuery(window).load(function () {
     jQuery('.section-title-holder').trigger("sticky_kit:recalc");
 
     jQuery('.doc-loader').fadeOut('fast');
+    $('body').css('overflow', 'auto');
 });
 
 
