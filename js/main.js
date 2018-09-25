@@ -275,6 +275,7 @@ jQuery(window).load(function () {
 
     jQuery('.doc-loader').fadeOut('fast');
     $('body').css('overflow', 'auto');
+    $('body').css('overflowX', 'hidden');
 });
 
 
