@@ -472,6 +472,13 @@ h1.big-title
     max-height: none;
     max-width: none;    
 }
+.grid-item video {
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:none;
+    max-width:none;
+}
 
 .grid-sizer, .grid-item 
 {
