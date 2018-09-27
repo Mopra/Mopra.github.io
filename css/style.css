@@ -2106,10 +2106,6 @@ body a:hover {
 .section-content-holder .content-wrapper {
   padding: 0 60px; }
 
-.page .section-content-holder {
-  width: 1170px;
-  padding: 0; }
-
 .section-content-holder.right {
   margin-left: 370px; }
 
@@ -2787,18 +2783,31 @@ footer {
   height: auto; }
 
 #portfolio-2 {
-  background-color: #221c5a;
+  padding-top: 30vh;
+  background-color: #273c75;
   background-image: url(../demo-images/item_background_01.png);
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  padding-bottom: 200px; }
+
+#portfolio-2 video {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.content-block {
+  float: right;
+  padding: 70px 0; }
+.content-block span {
+  color: #212121; }
 
 .single-portfolio .menu-wrapper {
   display: none !important; }
 
 .single-portfolio article .entry-content {
   background-color: #fff;
-  padding: 100px 0;
+  padding: 0;
   font-size: 18px;
   line-height: 30px; }
 
@@ -2851,6 +2860,9 @@ footer {
   background-color: rgba(12, 25, 32, 0.3);
   cursor: pointer; }
 
+/*.caroufredsel_wrapper {
+    max-height: 580px;
+}*/
 /* END SINGLE PORTFOLIO */
 /* RESPONSIVE PART */
 @media screen and (max-width: 1270px) {
@@ -2944,11 +2956,9 @@ footer {
     padding-left: 0;
     padding-right: 5%; } }
 @media screen and (max-width: 1100px) {
-  /*.single-portfolio .x-close
-  {
-      right: 50%;
-      right: calc(50% - 30px);    
-  } */ }
+  .single-portfolio .x-close {
+    right: 50%;
+    right: calc(50% - 30px); } }
 @media screen and (max-width: 1020px) {
   .content-1170 {
     width: 100%; }
@@ -2983,9 +2993,6 @@ footer {
   .section {
     padding-bottom: 150px; }
 
-  .section.page {
-    padding: 0; }
-
   .section-content-holder.right {
     margin-left: 0; }
 
@@ -3018,9 +3025,6 @@ footer {
   .section-content-holder {
     width: 100%;
     padding: 30px 0; }
-
-  .page .section-content-holder {
-    padding: 0; }
 
   .section-content-holder .content-wrapper {
     padding: 0 5%; }

@@ -200,11 +200,6 @@ body a:hover
     padding: 0 60px;
 }
 
-.page .section-content-holder {
-    width:1170px;
-    padding:0;
-}
-
 .section-content-holder.right
 {
     margin-left: 370px;
@@ -1159,12 +1154,27 @@ footer
 
 #portfolio-2
 {
-
-    background-color: #221c5a;
+    padding-top:30vh;
+    background-color: #273c75;
     background-image: url(../demo-images/item_background_01.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100% auto;
+    padding-bottom: 200px;
+}
+#portfolio-2 video {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.content-block {
+    float:right;
+    padding:70px 0;
+    
+    span {
+        color:#212121;
+    }
 }
     
 .single-portfolio .menu-wrapper
@@ -1175,7 +1185,7 @@ footer
 .single-portfolio article .entry-content
 {
     background-color: #fff;
-    padding: 100px 0;
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
 }
@@ -1243,6 +1253,10 @@ footer
         cursor: pointer;
     }
 }
+
+/*.caroufredsel_wrapper {
+    max-height: 580px;
+}*/
 
 /* END SINGLE PORTFOLIO */
 
@@ -1396,11 +1410,11 @@ footer
 
 @media screen and (max-width: 1100px) {    
 
-    /*.single-portfolio .x-close
+    .single-portfolio .x-close
     {
         right: 50%;
         right: calc(50% - 30px);    
-    } */   
+    }    
 
 }
 
@@ -1460,10 +1474,6 @@ footer
         padding-bottom: 150px;
     }  
 
-    .section.page {
-        padding:0;
-    }
-    
     .section-content-holder.right 
     {
         margin-left: 0;
@@ -1510,9 +1520,7 @@ footer
         width: 100%;
         padding: 30px 0;    
     }
-    .page .section-content-holder {
-        padding:0;
-    }
+
     .section-content-holder .content-wrapper
     {
         padding: 0 5%;
