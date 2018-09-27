@@ -200,6 +200,11 @@ body a:hover
     padding: 0 60px;
 }
 
+.page .section-content-holder {
+    width:1170px;
+    padding:0;
+}
+
 .section-content-holder.right
 {
     margin-left: 370px;
@@ -454,6 +459,13 @@ h1.big-title
     display: block;
 }
 
+.page .section-content-holder.portfolio-holder {
+    width:100% !important; 
+}
+.page .grid {
+    width:1170px;
+}
+
 .grid-item 
 {
     float: left;
@@ -484,15 +496,24 @@ h1.big-title
 {
     width: 400px;
 }
-
+.page .grid-sizer, .page .grid-item 
+{
+    width: 585px;
+}
 .grid-item.p_one_half
 {
     width: 400px;
+}
+.page .grid-item.p_one_half {
+    width:585px;
 }
 
 .grid-item.p_one
 {
     width: 800px;
+}
+.page .grid-item.p_one {
+    width:1170px;
 }
 
 .portfolio-text-holder
@@ -817,8 +838,6 @@ a.video-popup-holder:hover img.popup-play
     opacity: 1;
 }
 /* END VIDEO SECTION */
-
-
 
 
 
@@ -1153,15 +1172,10 @@ footer
     display: none !important;
 }
 
-.single-portfolio article
-{
-    padding-top: 230px;
-}
-
 .single-portfolio article .entry-content
 {
     background-color: #fff;
-    padding-bottom: 50px;
+    padding: 100px 0;
     font-size: 18px;
     line-height: 30px;
 }
@@ -1233,13 +1247,14 @@ footer
 /* END SINGLE PORTFOLIO */
 
 
+
 /* RESPONSIVE PART */
 
 @media screen and (max-width: 1270px) {   
 
     .content-1170 
     {
-        width: 960px;
+        width: 1170px;
     }
 
     .one_half
@@ -1381,11 +1396,11 @@ footer
 
 @media screen and (max-width: 1100px) {    
 
-    .single-portfolio .x-close
+    /*.single-portfolio .x-close
     {
         right: 50%;
         right: calc(50% - 30px);    
-    }    
+    } */   
 
 }
 
@@ -1404,7 +1419,7 @@ footer
 
     .single-portfolio article 
     {
-        padding-top: 140px;
+        //padding-top: 140px;
     }
 
     .one_half
@@ -1445,6 +1460,10 @@ footer
         padding-bottom: 150px;
     }  
 
+    .section.page {
+        padding:0;
+    }
+    
     .section-content-holder.right 
     {
         margin-left: 0;
@@ -1491,7 +1510,9 @@ footer
         width: 100%;
         padding: 30px 0;    
     }
-
+    .page .section-content-holder {
+        padding:0;
+    }
     .section-content-holder .content-wrapper
     {
         padding: 0 5%;

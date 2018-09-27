@@ -2106,6 +2106,10 @@ body a:hover {
 .section-content-holder .content-wrapper {
   padding: 0 60px; }
 
+.page .section-content-holder {
+  width: 1170px;
+  padding: 0; }
+
 .section-content-holder.right {
   margin-left: 370px; }
 
@@ -2277,6 +2281,12 @@ h1.big-title {
   position: relative;
   display: block; }
 
+.page .section-content-holder.portfolio-holder {
+  width: 100% !important; }
+
+.page .grid {
+  width: 1170px; }
+
 .grid-item {
   float: left;
   font-size: 0;
@@ -2302,11 +2312,20 @@ h1.big-title {
 .grid-sizer, .grid-item {
   width: 400px; }
 
+.page .grid-sizer, .page .grid-item {
+  width: 585px; }
+
 .grid-item.p_one_half {
   width: 400px; }
 
+.page .grid-item.p_one_half {
+  width: 585px; }
+
 .grid-item.p_one {
   width: 800px; }
+
+.page .grid-item.p_one {
+  width: 1170px; }
 
 .portfolio-text-holder {
   position: absolute;
@@ -2777,12 +2796,9 @@ footer {
 .single-portfolio .menu-wrapper {
   display: none !important; }
 
-.single-portfolio article {
-  padding-top: 230px; }
-
 .single-portfolio article .entry-content {
   background-color: #fff;
-  padding-bottom: 50px;
+  padding: 100px 0;
   font-size: 18px;
   line-height: 30px; }
 
@@ -2839,7 +2855,7 @@ footer {
 /* RESPONSIVE PART */
 @media screen and (max-width: 1270px) {
   .content-1170 {
-    width: 960px; }
+    width: 1170px; }
 
   .one_half {
     margin-right: 8%;
@@ -2928,9 +2944,11 @@ footer {
     padding-left: 0;
     padding-right: 5%; } }
 @media screen and (max-width: 1100px) {
-  .single-portfolio .x-close {
-    right: 50%;
-    right: calc(50% - 30px); } }
+  /*.single-portfolio .x-close
+  {
+      right: 50%;
+      right: calc(50% - 30px);    
+  } */ }
 @media screen and (max-width: 1020px) {
   .content-1170 {
     width: 100%; }
@@ -2938,9 +2956,6 @@ footer {
   .extra-content-left, .extra-content-right {
     width: 100%;
     margin-left: 0; }
-
-  .single-portfolio article {
-    padding-top: 140px; }
 
   .one_half {
     width: 100%;
@@ -2967,6 +2982,9 @@ footer {
 
   .section {
     padding-bottom: 150px; }
+
+  .section.page {
+    padding: 0; }
 
   .section-content-holder.right {
     margin-left: 0; }
@@ -3000,6 +3018,9 @@ footer {
   .section-content-holder {
     width: 100%;
     padding: 30px 0; }
+
+  .page .section-content-holder {
+    padding: 0; }
 
   .section-content-holder .content-wrapper {
     padding: 0 5%; }
